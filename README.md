@@ -10,6 +10,8 @@ rpi-rw
 
 sudo git clone https://github.com/bmchina/pi-star-4g.git
 
+cd pi-star-4g
+
 sudo ./install.sh
 
 =======================================
