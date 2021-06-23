@@ -1,12 +1,14 @@
 4G model auto-start scripts for pi-star & mmdvm
 
-(Only for QUECTEL EC20/200 series USB model）
+(Only for QUECTEL EC200 series USB model）
 
 =======================================
 
 Usage:
 
-git clone https://github.com/fisherzhu/mmdvm4g.git
+rpi-rw
+
+sudo git clone https://github.com/bmchina/pi-star-4g.git
 
 sudo ./install.sh
 
