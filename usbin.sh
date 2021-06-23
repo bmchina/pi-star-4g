@@ -2,7 +2,7 @@
 
 logfile="/var/log/usb4g.log"
 actiontime=$(date +"%Y/%m/%d %H:%M:%S")
-isrunning=$(ps aux | grep test.py | wc -l)
+isrunning=$(ps aux | grep start4g.py | wc -l)
 isrunning=$[isrunning-1]
 
 if [ $isrunning -gt 0 ]
@@ -11,6 +11,6 @@ then
     exit
 else
     sudo echo "Run: -- "$actiontime >> $logfile
-    sudo python /home/pi-star/test.py
+    sudo python /usr/local/bin/start4g.py
     exit
 fi
