@@ -29,21 +29,12 @@ def send_at(command,back,timeout):
 		print(command + ' no responce')
 
 try:
-
-	send_at('AT+CSQ','OK',1)
-	EC20status=send_at('AT+CIMI','4600',1)
+	EC20status=send_at('AT+CSQ','OK',1)
         # sim ready
 	if EC20status==0:
 	   while True:
-         	EC20status=send_at('AT+CIMI','4600',1)
+         	EC20status=send_at('AT+CSQ','OK',1)
                 #sim ready
-         	if EC20status==1:
-         	   break
-	EC20status=send_at('AT+CGATT?','+CGATT: 1',1)
-	if EC20status==0:
-	   while True:
-         	EC20status=send_at('AT+CGATT?','+CGATT: 1',1)
-                #sim register
          	if EC20status==1:
          	   break
 	send_at('AT+QNETDEVCTL=1,1,1','OK', 2)
