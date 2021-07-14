@@ -21,12 +21,14 @@ NOTE: Need -REBOOT- your device after installation.
 =======================================
 
 
-
 Additional:
+=======================================
 
 If you run under pi-star 3.4.17, maybe error message as below:
 
-1) ImportError: No module named 'serial'.
+===============================================
+
+ImportError: No module named 'serial'.
 
 you should install serial module
 
@@ -38,7 +40,9 @@ sudo pip install pyserial    //python2
 
 sudo pip3 install pyserial   //python3
 
-2)short of  usb driver
+short of  usb driver
+
+====================
 
 sudo apt install raspberrypi-kernel-headers
 
